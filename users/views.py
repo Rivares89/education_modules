@@ -24,4 +24,6 @@ class UserViewSet(viewsets.ModelViewSet):
         user.is_active = True
         user.save()
 
-        return Response(serializer.data, status=status.HTTP_201_CREATED, headers=headers)
+        return Response(serializer.data,
+                        status=status.HTTP_201_CREATED,
+                        headers=headers)

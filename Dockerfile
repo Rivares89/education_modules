@@ -2,8 +2,8 @@ FROM python
 
 WORKDIR /code
 
-COPY ./requerements.txt /code/
+COPY ./requirements.txt /code/
 
-RUN pip install -r requerements.txt
+RUN pip install -r requirements.txt
 
 COPY . .
